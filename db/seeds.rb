@@ -274,7 +274,6 @@ playlist_1 = Playlist.create({
     tracks: [12, 13, 14, 15, 16]
 })
 
-
 playlist_2 = Playlist.create({
     owner_id: ahnaf.id,
     creator_id: ahnaf.id,
