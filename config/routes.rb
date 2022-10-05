@@ -11,12 +11,18 @@ Rails.application.routes.draw do
   patch '/incomings/:id', to: 'incomings#update'
   delete '/incomings/:id', to: 'incomings#destroy'
 
+  get '/playlists', to: 'playlists#index'
+  get '/playlists/:id', to: 'playlists#show'
+  post '/playlists/', to: 'playlists#create'
+  patch '/playlists/:id', to: 'playlists#update'
+  delete '/playlists/:id', to: 'playlists#destroy'
+
+  get '/songs/', to: 'songs#index'
+  get '/songs/:id', to: 'songs#show'
 
   get '/users', to: 'users#index'
   get '/users/:id', to: 'users#show'
   post '/users', to: 'users#create'
   patch '/users/:id', to: 'users#update'
   delete '/users/:id', to: 'users#destroy'
-
-
 end
